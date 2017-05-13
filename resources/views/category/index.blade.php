@@ -19,11 +19,9 @@
                         </div>
                     </div>
                     <div class="panel-footer">
-                        @can('create', $category)
-                            <a href="{{ route('categories.create', $category->id) }}" class="btn btn-primary btn-sm">
-                                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add
-                            </a>
-                        @endcan
+                        <a href="{{ route('categories.create') }}" class="btn btn-primary btn-sm">
+                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add
+                        </a>
                     </div>
                 </div>
             </div>
